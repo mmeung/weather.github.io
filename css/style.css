@@ -1,0 +1,184 @@
+@import url('reset.css');
+@import url('all.min.css');
+@import url('weather-icons.css');
+@import url('weather-icons-wind.css');
+@import url('slick.css');
+@import url('slick-theme.css');
+@import url('notosans.css');
+
+* { box-sizing : border-box }
+html,body {
+    height : 100%;
+}
+body {
+    margin : 0; 
+}
+.wrapper {
+    font-size : 1em; 
+    font-weight : 400; 
+    font-family : 'NotoSansKr', sans-serif;
+    color : #000; 
+    background-size : contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    overflow : auto; 
+    position : relative;
+}
+h1 {
+    color : #000; 
+    font-size : 1.6em; 
+    font-weight : 700;
+}
+.container {
+    width : 100%; 
+    position : relative; 
+    padding-left: 1em;
+}
+.city {
+    color : #fff; 
+    font-size : 2em; 
+    margin : 30px 0 10px 30px; 
+}
+.temp {
+    font-size : 10em; 
+    font-weight : 500;
+    margin-left : 30px;
+    letter-spacing: -10px;
+    background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.small {
+    font-size: 0.7em;
+    vertical-align: top;
+    padding-left : 0.1em;
+}
+.descript {
+    font-size : 1.5em; 
+    color : #fff; 
+    position : absolute;
+    transform : rotate(-90deg);
+    right : -30px;
+    top : 130px;  
+}
+.detail {
+    margin-top : 295px; 
+}
+.detail-top {
+    height : 50px; 
+    text-align: center;
+    padding-top : 40px; 
+}
+.detail-top::after {
+    content : '';
+    display : block; 
+    width : 50px; 
+    height : 5px; 
+    border-radius: 2.5px;
+    background: #ddd;
+    margin : 0 auto; 
+    position : absolute;
+    left : calc(50% - 25px);
+}
+.text-center {
+    text-align : center; 
+}
+.detail-body {
+    padding : 0 30px; 
+    background-color: #fff;;
+}
+.detail-body h1 {
+    padding-top : 0.3em;
+    letter-spacing : 0em; 
+    font-variant: small-caps;
+    margin-bottom: 0.7em;
+}
+.today-box {
+    display : flex; 
+    padding-bottom : 20px; 
+    border-bottom : 1px dashed #787878;
+}
+.today-box ul {
+    color : #787878;
+}
+.today-box ul:first-child {
+    width : 40%; 
+}
+.today-box ul:last-child {
+    width : 60%; 
+}
+.today-box li {
+    padding : 8px 0px; 
+}
+.today-box label {
+    margin-right: 10px;
+    font-weight : 700;
+    letter-spacing: -2px;
+}
+.today-box i  {
+    margin-right : 10px; 
+}
+
+.five-day {
+    margin-top : 20px; 
+}
+.three-times {
+    text-align : center; 
+    padding : 0 5px; 
+}
+.five-date {
+    font-weight : 700;
+    color : #000;
+    margin-bottom : 5px; 
+}
+.five-icon > img {
+    width : 5em;
+    margin : 0.5em auto; 
+}
+.five-temp {
+    margin-top : 0.5em; 
+    font-size : 1.5em;
+    font-weight : 700;
+}
+.five-descript {
+    color : #787878;
+    margin-top : 0.3em;
+}
+
+/* search box */
+.search-box {
+    position :absolute;
+    top : 25px;
+    right : 0; 
+    padding : 8px 10px 8px 30px;
+    background-color : rgba(255, 255, 255, 0.7);
+    border-top-left-radius : 30px; 
+    border-bottom-left-radius : 30px; 
+    transition : all 0.3s;
+    opacity : 0; 
+    width : 0px; 
+}
+.search-box form {
+    border : 1px solid #787878;
+    border-radius : 20px; 
+    padding : 5px 20px; 
+    width : 100%; 
+}
+.search-box input {
+    font-size : 1.2em;
+    padding : 5px 10px; 
+    border : none; 
+    background-color: transparent;
+}
+a.btn {
+    position : absolute;
+    top : 42px; right : 30px; 
+    z-index : 999;
+}
+.btn i {
+    font-size : 1.5em;
+    color : #fff;
+    z-index : 10;
+    right : 25px;
+    transition : 0.3s;
+}
